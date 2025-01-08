@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        /* ====================================================================================== */
+
+        /* Cards */
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 50px;
+        }
+        .card{
+            width: 300px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+        }
+        .card:hover{
+            box-shadow: 0px 0px 100px rgb(107, 52, 10);
+            cursor: pointer;
+        }
+        .card p{
+            padding: 10px;
+            letter-spacing: 1px;
+        }
+        .card img{
+            height: 80%;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        /* ====================================================================================== */
+
+
+        /* Header */
+        header .info{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 50px;
+            
+        }
+
+        .logo{
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .logo img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .head-1 input {
+            border: 0px;
+           outline: none;
+        }
+
+        .search{
+            border: 1px solid black;
+            width: 450px;
+        }
+        
+        .route{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: grey;
+        }
+        
+        .category{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            width: 30%;
+        }
+
+        .category li{
+            cursor: pointer;
+        }
+
+        .offers li{
+            cursor: pointer;
+        }
+        
+        .offers{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            width: 30%;
+        }
+
+        /* Slider */
+        
+
+        .slider img{
+            height: 300px;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        .slider div{
+            overflow: auto;
+            display: flex;
+        }
+
+        .slider{
+            /* margin: 0px 50px; */
+            /* padding: 20px 50px; */
+
+            overflow-x: hidden;
+            /* width: 330vw; */
+           padding: 20px 0;
+           background-color: rgb(246, 238, 238);
+        }
+
+        /* Banner */
+        .banner-2{
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .banner-3 img{
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .live-events{
+            padding:10px 50px;
+        }
+        .live-events h2{
+            margin-bottom: 10px;
+            color: rgb(169, 199, 199);
+        }
+
+        /* permier */
+        .premier-banner{
+            background-color: rgb(48, 37, 74);
+            padding: 0 50px;
+        }
+
+        .premier-banner h1{
+            color: white;
+            position: relative;
+            top: 50px;
+        }
+        .premier{
+           
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 80vh;
+           
+        }
+
+        .premier img{
+            height: 350px;
+            border-radius: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="info">
+
+            <div style="display: flex;align-items: center;"class="head-1">
+                <div class="logo">
+                    <img src="https://th.bing.com/th?id=OIP.ApmA1X-RvuxRz6Rw63tnZgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+                </div>
+                <div class="search">
+    
+                    <input style="height: 30px;border-radius: 10px;border-width: 1px;" type="text" placeholder="Search">
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;width: 250px;justify-content: space-evenly;">
+                <p style="font-size: 18px;">Coimbatore</p>
+                <button style="height: 25px;width: 80px;border-radius: 10px;background-color: rgb(224, 83, 83);font-weight: 200;color: white;border-color: rgb(221, 193, 193);">Sign in</button>
+                <div>Logo</div>
+            </div>
+        </div>
+
+        <div class="route">
+            <ul class="category">
+                <li>Movies</li>
+                <li>Stream</li>
+                <li>Events</li>
+                <li>Plays</li>
+                <li>Sports</li>
+                <li>Activities</li>
+            </ul>
+            <ul class="offers">
+                <li>ListYourShow</li>
+                <li>Corporates</li>
+                <li>Offers</li>
+                <li>GiftCards</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="slider">
+        <div>
+            <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg" alt="">
+            <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1735281620954_boaweb.jpg" alt="">
+       
+            <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg" alt="">
+            <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg" alt="">
+        </div>
+       
+    </div>
+    
+    <div class="cards">
+        <div class="card">
+            <img src="https://imgv3.fotor.com/images/gallery/cartoon-character-generated-by-Fotor-ai-art-creator.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, totam!</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/archaeologist-cartoon-character-3d-animation-illustration-guide_1029473-86420.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, totam!</p>
+        </div>
+        <div class="card">
+            <img src="https://xinva.ai/wp-content/uploads/2023/12/106.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, totam!</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/young-man-get-idea-3d-character-illustration_839035-203380.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, totam!</p>
+        </div>
+        
+    </div>
+
+    <div class="banner-2">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" alt="">
+    </div>
+
+    <div class="live-events">
+        <h2>The Best of Live Events</h2>
+        <div class="banner-3">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" alt="">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/bmshp-desktop-kids-collection-202404190106.png" alt="">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" alt="">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" alt="">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-OSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/arts-crafts-collection-202211140440.png" alt="">
+        </div>
+    </div>
+    <div class="premier-banner">
+        <h1>Premier Shows</h1>
+        <div class="premier">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00398666-aylchydrqf-portrait.jpg" alt="">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00413291-jgamljhjzq-portrait.jpg" alt="">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:l-image,i-discovery-catalog@@icons@@bms_premiere_v1.png,t-false,lfo-bottom_left,l-end/et00417677-djedwsakau-portrait.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
